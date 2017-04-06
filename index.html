@@ -5,151 +5,299 @@
 <title>primera aplicacion</title>
 
 <!--grupo CSS-->
-<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
-<!--<link rel="stylesheet"href="css/jquery.mobie.icons-1.4.5.min.css"/>
-<link rel="stylesheet"href="css/jquery.mobie.structure-1.4.5.min.css"/>-->
+<link rel="stylesheet" href="css/tema-app3.min.css"/>
+<link rel="stylesheet"href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet"href="css/jquery.mobile.structure-1.4.5.min.css"/>
 <!--grupo JavaScript-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 <script src="js/acciones.js"></script>
 <script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
 
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
 
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 
-<body>
+<body onLoad="MM_preloadImages('imagenes/pf.jpg')">
 
-<div data-role="page" id="Principal" data-theme="a">
+<div data-role="page" id="Principal" data-theme="b">
 <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
-<h1>Datos personales del alumno</h1>
-</div>
-<div data-role="main" class="ui-content">
-<div data-role="collapsible" data-content-theme="false">
-<h1>Foto de perfil:</h1>
-<div>
-<p>Esta es mi imagen de perfil</p>
-<br>
-</div>
-<div><img src="imagenes/foto.jpg" width="23%" height="28%"></div>
-</div>
-</div>
+<h1>CONTAMINACIÓN</h1></div>
 <div>
 <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
 <li class="ui-first-child ui-last-child">
-<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
-<h2> Datos generales </h2>
-<p> Fernando Muñoz Herrada </p>
-</a>
-</li>
-<li class="ui-first-child ui-last-child">
-<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
-<h2> Fecha de nacimiento </h2>
-<p> 17/12/2000 </p>
-</a>
-</li>
-<li class="ui-first-child ui-last-child">
-  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
-<h2> DOMICILIO </h2>
-<p>Muestra el Domicilio del alumno</p>
+  <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>DEFINICIÓN</h2>
+  <p>Pulse para más información...</p>
   </a>
 </li>
 <li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>TIPOS DE CONTAMINACIÓN</h2>
+<p>Pulse para más información...</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>CONSECUENCIAS DE LA CONTAMINACIÓN</h2>
+<p>Pulse para más información...</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
 <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
-<h2> DEPORTE FAVORITO </h2>
-<p> Pesca</p>
+<h2>MEDIDAS PARA CONVATIR LA CONTAMINACIÓN</h2>
+<p>Pulse para más información...</p>
 </a>
 </li>
 <li class="ui-first-child ui-last-child">
 <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
-<h2> OTROS GUSTOS E INTERESES </h2>
-<p>Artes Marciales Mixtas</p>
+<h2>CONTAMINACIÓN EN MI ENTORNO</h2>
+<p>Pulse para más información...</p>
 </a>
 </li>
 </ul>
 </div>
-<div data-role="footer" align="center" data-theme="a" data-position="fixed"> 
+<div data-role="footer" align="center" data-theme="b" data-position="fixed"> 
 <div>
-<img src="imagenes/persona_azul.png" width="46" height="46">
+<img src="Imagenes/reciclaje.png" width="46" height="46">
 </div>
 <div>
-<h4> Aplicacion uno </h4>
+<h4> Aplicacion Tres</h4>
 <h4> Fernando Muñoz Herrada </h4>
 </div>
 </div>
 </div>
-<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
 <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
-<h1> Nombre </h1>
+<h1>LA CONTAMINACIÓN ES:</h1>
 </div>
 <div data-role="content" align="center">
 <div>
-<h2> Fernando Muñoz Herrada </h2>
+<h2> La contaminación es la introducción de sustancias u otros elementos físicos en un medio que provocan que éste sea inseguro o no apto para su uso. El medio puede ser un ecosistema, un medio físico o un ser vivo. El contaminante puede ser una sustancia química, energía (como sonido, calor, luz o radiactividad).</h2>
 </div>
 </div>
-<div data-role="footer" data-theme="a" data-position="fixed">
-<h4> Aplicacion 1 FMH </h4>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Smog</h1>
+<div>
+<p>Smog en la ciudad de Nueva York</p>
+<br>
+</div>
+<div>
+ <img src="Imagenes/smog.jpg" width="728" height="581"> 
 </div>
 </div>
- 
+<div data-role="collapsible" data-content-theme="false">
+<h1>Incendios forestales</h1>
+<div>
+  <p>Los incendios forestales en México han aumentado un 57.26 %, en comparación con el año pasado.</p>
+<br>
+</div>
+<div>
+ <img src="Imagenes/incendios.jpg" width="728" height="581"> 
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Derrame de petróleo</h1>
+<div>
+<p>Tareas de limpieza por contaminación debido a vertido de petróleo.</p>
+<img src="Imagenes/petroleo.jpg" width="728" height="581"><br>
+</div>
+<div></div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Calentamiento Global</h1>
+<div>
+<p>Iztaczihuatl en México a consecuencia de la contaminación. La atmósfera gris y el calentamiento global, característica de las grandes ciudades han provocado una disminución considerable de masas de hielo de las grandes montañas.</p>
+<br>
+</div>
+<div>
+ <img src="Imagenes/itza.jpg" width="728" height="581"> 
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4> Aplicacion Tres FMH </h4>
+</div>
+</div>
 
-<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
 <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
-<h1> Fecha de nacimiento </h1>
+<h1> TIPOS DE CONTAMINACIÓN:</h1>
 </div>
 <div data-role="content" align="center">
 <div>
- <h2> 17  de Diciembre de 2000  </h2></div>
+ <h2>Diferentes tipos de contaminación están clasificados por su parte que afectan o resultan por las causas de contaminación particulares. Cada uno de estos tipos tiene sus propias causas y consecuencias distintivas. El estudio de la contaminación ambiental ayuda a entender los conceptos básicos con mayor detalle y producir protocolos para los tipos específicos. En consecuencia, los principales tipos de contaminación son:</h2>
+<div data-role="collapsible" data-content-theme="false">
+<h2><strong>Contaminación del Agua</strong></h2>
+<div>
+  <p>Como su nombre lo sugiere, &ldquo;Contaminación del agua&rdquo; es el tipo de contaminación que supone la contaminación distintos cuerpos de agua. Varias criaturas acuáticas dependen de estos cuerpos de agua y sus características naturales nutritivos para apoyar su vida.</p></div>
+<div>
+ <img src="Imagenes/ca.jpg" width="728" height="581"> 
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h2><strong>Contaminación del Aire</strong></h2>
+<div>
+  <p>La contaminación del aire altera la composición química y natural del aire. La respiración es un proceso importante para la vida de todos los seres vivos. Por lo tanto, si el aire que nos rodea está contaminado con gases venenosos, tendría un efecto fatal en nosotros.</p></div>
+<div>
+ <img src="Imagenes/cai.jpg" width="728" height="581"> 
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h2><strong>Contaminación del Suelo</strong></h2>
+<div>
+  <p>Suelo pelado de su fertilidad natural mediante el uso de sustancias químicas artificiales, como los pesticidas, insecticidas, etc maduración agentes que se conoce como &ldquo;contaminación del suelo&rdquo;. Las plantas dependen de los compuestos nitrogenados presentes en el suelo para su nutrición. El uso de insecticidas, pesticidas y otras sustancias químicas artificiales absorbe el nitrógeno del suelo por lo que es apto para el crecimiento de las plantas. Las plantas son responsables de mantener el suelo de una manera firme así, cuando las plantas no pueden crecer divide el suelo, lo que conduce a la erosión del suelo.</p></div>
+<div>
+ <img src="Imagenes/cs.jpg" width="728" height="581"> 
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h2>Contaminación Térmica</h2>
+<div>
+  <p>Aumento de la temperatura en el ecosistema debido a la liberación de energía de calor excesivo en el medio ambiente por métodos artificiales o desastres naturales que se llama &ldquo;La contaminación térmica&rdquo;. Generalmente, las industrias manufactureras liberar una gran cantidad de energía térmica que se transfiere a los cuerpos de agua y aire. Incluso los vehículos que tienen motores de combustión liberan una gran cantidad de energía térmica, ya que requieren altas temperaturas para funcionar. El dióxido de carbono tiene una propiedad de bloquear el calor salga de la atmósfera y por lo que el calor que viene del sol es atrapada en la atmósfera.</p></div>
+<div>
+ <img src="Imagenes/ct.jpg" width="728" height="581"> 
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+  <h2>Contaminación radiactiva</h2>
+  <div>
+  <p>Contaminación radiactiva se produce cuando &ldquo;RADIACTIVO&rdquo; desintegrarse liberando metales peligrosos rayos beta que pueden causar cáncer y otras enfermedades mutativas. Este tipo de contaminación puede ocurrir por cualquiera de los vertidos de residuos radiactivos de las centrales nucleares en los cuerpos de agua, daños en los reactores nucleares con miras a la contaminación radiactiva que duraría muchos años y muchos más. En la Segunda Guerra Mundial, cuando EE.UU. atacó a Hiroshima y Nagasaki de Japón, la bomba atómica dejó una huella radiactiva que conduce a enfermedades altamente transformadoras. Por lo tanto, la mayoría de las personas que sobrevivieron al bombardeo atómico finalmente murió de cáncer y mutaciones.</p></div>
+<div>
+ <img src="Imagenes/cr.jpg" width="728" height="581"> 
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h2>Contaminación Acústica</h2>
+<div>
+  <p>Hay diferentes cualidades de los sonidos. Los sonidos que no son agradables de oír se llaman &ldquo;ruidos&rdquo;. Así que un exceso de ruido en el exterior conduce a la &ldquo;contaminación acústica&rdquo;. Esto puede ser experimentado por bocinazos demasiados vehículos en las carreteras, maquinaria pesada está operando a la intemperie (por ej, un martillo neumático), los trenes, los clubes, las multitudes más pobladas y muchos más. La contaminación acústica es conocido por causar estrés mental y la depresión. También puede causar daños en el tímpano, que puede causar sordera. La contaminación acústica tiene más de un efecto psicológico en lugar de uno físico.</p>
+</div>
+<div>
+ <img src="Imagenes/cac.jpg" width="728" height="581"> 
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+  <h2>Contaminación Lumínica</h2>
+  <div>
+  <p>La iluminación brillante en funciones, grandes ciudades, etc causa &ldquo;contaminación lumínica&rdquo;. El exceso de luz en la retina provoca gran incomodidad en los ojos, especialmente en condiciones de poca luz, como durante la noche. Las luces brillantes tensión de los ojos y también le dan dolores de cabeza y migrañas. Si observamos, la contaminación lumínica, contaminación térmica y la contaminación acústica son todos los tipos de contaminación que son causadas por las diferentes formas de energía.</p></div>
+<div>
+ <img src="Imagenes/cl.jpg" width="728" height="581"> 
+</div>
+</div>
+</div>
  </div>
 <div data-role="footer" data-therme=”a” data-position="fixed">
-<h4>Aplicacion Uno, FMH </h4>
+<h4>Aplicacion Tres, FMH </h4>
 </div>
 </div>
-
-
-<div data-role"page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
 <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
-<hl> DOMICILIO </h1>
+<h1>LAS CONSECUENCIAS DE LA CONTAMINACIÓN SON:</h1>
 </div>
 <div dala-role="content" align="center">
 <div>
-   <h2> 3 Sur 2106 a Col.Fco.I Madero entre 21 y 23 poniente </h2></div>
-</div>
-<div data-role"footer" data-theme"a" data-postion"fixed">
-<h4>Aplicacion Uno, FMH </h4>
+   <h2> Que un planeta tan bonito como este...</h2>
+   <h2>(tocar la imagén)</h2>
+   <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image36','','imagenes/pf.jpg',1)"><img src="imagenes/pb.jpg" width="640" height="480" id="Image36"></a> </p>
+   <h2>paso a algo como esto.</h2>
 </div>
 </div>
 
 
-<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Tres, FMH </h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
 <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
-<h1>DEPORTE FAVORITO </h1>
+<h1>MEDIDAS PARA CONVATIR LA CONTAMINACIÓN</h1>
 </div>
 <div data-role="content" align="center">
 <div>
-  <h2>Pescar</h2>
- <img src="imagenes/deporte.png" width="50%" height="50%">
+  <h1>15 maneras sencillas de reducir la contaminación (y prevenir la contingencia ambiental)</h1>
+  <p>1.– Afina y da mantenimiento a los automóviles</p>
+  <p>2.– Evita quemar basura y llantas, así como el uso de cohetes artificiales</p>
+  <p>3.– Evita comprar artículos desechables y plásticos que no son <a href="https://es.wikipedia.org/wiki/Biodegradabilidad" target="_self">biodegradables</a>.</p>
+  <p>4.– Recicla la basura</p>
+  <p>5.– No arrojes basura en la calle, bosques y parques, envuélvela o tápala bien en la casa</p>
+  <p>6.– Usa racionalmente los <a href="http://www.fao.org/docrep/W2598S/w2598s06.htm" target="_self">plaguicidas</a></p>
+  <p>7.– Evita el consumo de tabaco</p>
+  <p>8– Cuida los bosques al no provocar incendios ni destruir las zonas verdes de la ciudad</p>
+  <p>9.– Pospón las tareas de jardinería que requieran el uso de herramientas a gasolina en días de alto nivel de de ozono.</p>
+  <p>10.– Consume <a href="https://es.wikipedia.org/wiki/Alimento_org%C3%A1nico" target="_self">alimentos orgánicos</a> o al menos aquellos no hayan sido sometidos a un uso tan intensivo de agroquímicos. (puedes cultivarlos en tú azotea con composta hecha por ti mismo)</p>
+  <p>11.– Restringe la limpieza en seco.</p>
+  <p>12.– Evita el uso de pinturas, aceites y solventes en días de <a href="https://es.wikipedia.org/wiki/Ozono" target="_self">alta concentración de ozono</a>.</p>
+  <p>13.– Reduce el consumo de electricidad, lo cual contribuirá a disminuir las emanaciones de contaminantes y partículas.</p>
+  <p>14.– Prende el carbón de leña con un encendedor eléctrico en vez de hacerlo con combustible líquido.</p>
+  <p>15.– Aplica el poder de las <a href="https://es.wikipedia.org/wiki/Regla_de_las_tres_erres" target="_self">3 Erres</a>: Reduce-Reutiliza-Recicla. Un menor consumo redundará en menor contaminación atmosférica de todo tipo.</p>
+  <h2>&nbsp; </h2>
 </div>
 </div>
-<div data-role="footer" data-theme="a" data-position="fixed">
-<h4>Aplicacion Uno, FMH </h4>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Tres, FMH </h4>
 </div>
 </div>
 
 
-<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
 <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
-<h1>GUSTOS E INTERESES</h1>
+<h1>LA REALIDAD ES CRUEL :,(</h1>
 </div>
 <div data-role="content" align="center">
 <div>
-<h2>Mis gustos son M.M.A.</h2></div>
-<img src="imagenes/WKBO.jpg" width="50%" height"50%">
+<H2>Como podemos ver, nuestro entorno esta realmente contaminado, ya sea por que la gente tira la basura en las calles y rios y todavia no suficiente con eso algunos hasta la queman despues, aqui podemos apreciar algunas imagenes de la triste realidad:</H2>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/qema_de__basura_en_cbtis_16.jpg" alt="Qema_de _basura_en_CBTIS_16" title="Qema_de _basura_en_CBTIS_16" id="wows1_0"/></li>
+		<li><img src="data1/images/quema_de_basura_en_las_calles.jpg" alt="Quema_de_basura_en_las_calles" title="Quema_de_basura_en_las_calles" id="wows1_1"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/basura_en_terrenos_valdios.jpg" alt="jquery slider" title="Basura_en_terrenos_valdios" id="wows1_2"/></a></li>
+		<li><img src="data1/images/tira_de_basura_en_rios.jpg" alt="Tira_de_basura_en_rios" title="Tira_de_basura_en_rios" id="wows1_3"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Qema_de _basura_en_CBTIS_16"><span><img src="data1/tooltips/qema_de__basura_en_cbtis_16.jpg" alt="Qema_de _basura_en_CBTIS_16"/>1</span></a>
+		<a href="#" title="Quema_de_basura_en_las_calles"><span><img src="data1/tooltips/quema_de_basura_en_las_calles.jpg" alt="Quema_de_basura_en_las_calles"/>2</span></a>
+		<a href="#" title="Basura_en_terrenos_valdios"><span><img src="data1/tooltips/basura_en_terrenos_valdios.jpg" alt="Basura_en_terrenos_valdios"/>3</span></a>
+		<a href="#" title="Tira_de_basura_en_rios"><span><img src="data1/tooltips/tira_de_basura_en_rios.jpg" alt="Tira_de_basura_en_rios"/>4</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">cssslider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<center>
+<h2><a href="http://ecoosfera.com/2016/03/15-maneras-sencillas-de-reducir-la-contaminacion-y-prevenir-la-contingencia-ambiental/" target="_self">Medidas para convatir la contaminación</a></h2>
+<h2><a href="http://ecoosfera.com/2016/03/15-maneras-sencillas-de-reducir-la-contaminacion-y-prevenir-la-contingencia-ambiental/" target="_top">Tipos de contaminación</a></h2>
+<h2><a href="https://tendenzias.com/eco/las-consecuencias-de-la-contaminacion/" target="_self">Consecuencias de la contaminación</a></h2>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Tres, FMH </h4>
 </div>
-<div data-role="footer" data-theme="a" data-position="fixed">
-<h4>Aplicacion Uno, FMH </h4>
-</div>
-</div>
-
 
 
 </body>
